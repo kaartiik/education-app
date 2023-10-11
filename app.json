@@ -2,6 +2,7 @@
   "expo": {
     "name": "education-app",
     "slug": "education-app",
+    "scheme": "kaartiik",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,16 +16,25 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.kaartiik.educationapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.kaartiik.educationapp",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "3677d3d9-d45e-4673-85b9-b87c070dcd1a"
+      }
+    },
+    "plugins": ["@react-native-google-signin/google-signin"]
   }
 }
